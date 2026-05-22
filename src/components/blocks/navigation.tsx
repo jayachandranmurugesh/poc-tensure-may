@@ -1,4 +1,4 @@
-import React from 'react';
+import imgUrl from '../../assets/logo.svg'
 import { useTheme } from '../../hooks/use-theme';
 import { Sun, Moon } from 'lucide-react';
 
@@ -22,12 +22,8 @@ export const Navigation = ({ setPersona }: NavProps) => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           {/* Tensure Geometric Shield Emblem */}
-          <svg className="w-6 h-6 text-violet-600 transition-transform group-hover:scale-105" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 2.18c3.39.99 5.82 3.81 5.82 7.09v4.21c0 3.32-1.92 6.42-5.82 7.51-3.9-1.09-5.82-4.19-5.82-7.51v-4.21c0-3.28 2.43-6.1 5.82-7.09z"/>
-          </svg>
-          <span style={{ color: 'var(--text-main)' }} className="font-black text-xl tracking-tighter uppercase font-sans">
-            Tensure<span className="text-violet-600">.</span>
-          </span>
+          <img src={imgUrl} alt="Tensure Logo" className="w-24 h-24" />
+         
         </div>
 
         {/* Directory Navigation Links */}
