@@ -8,6 +8,7 @@ import { BentoMatrix } from './components/blocks/bento-matrix.tsx';
 import { ControlPanel } from './components/presenters/control-panel.tsx';
 import { PortfolioScroll } from './components/blocks/portfolio-scroll.tsx';
 import { Footer } from './components/blocks/footer';  
+import { LogoClouds } from './components/blocks/logo-clouds.tsx';
 
 export default function App() {
   const [persona, setPersona] = useState<'developer' | 'enterprise' | 'scale'>('developer');
@@ -40,6 +41,7 @@ export default function App() {
         <SplitHero persona={persona} />
         <ProductTour />
         <BentoMatrix />
+        <LogoClouds />
         <PortfolioScroll />
         <CardDeck />
       </main>
